@@ -1,6 +1,7 @@
 package com.ASU.ApeejayStyaUniversity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,12 +15,15 @@ import android.widget.TextView;
 
 public class UserSelect extends AppCompatActivity {
     TextView txtAsuUser,txtOtherUser;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_select);
 
+        sharedPreferences = getSharedPreferences("LoginDetails",0);
+        final int flag = sharedPreferences.getInt("flag",0);
         txtAsuUser=findViewById(R.id.txtAsuUsers);
         txtOtherUser=findViewById(R.id.txtOtherUsers);
 
@@ -35,9 +39,19 @@ public class UserSelect extends AppCompatActivity {
         txtAsuUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserSelect.this,Login.class);
-                startActivityForResult(intent, 0);
-                overridePendingTransition(0, 0);
+                if (flag == 1)
+                {
+                    Intent intent = new Intent(UserSelect.this , PinEntry.class);
+                    startActivityForResult(intent, 0);
+                    overridePendingTransition(0, 0);
+                    finish();
+                }
+                else {
+                    Intent intent = new Intent(UserSelect.this, Login.class);
+                    startActivityForResult(intent, 0);
+                    overridePendingTransition(0, 0);
+                    finish();
+                }
             }
         });
     }
