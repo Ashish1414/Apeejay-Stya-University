@@ -75,8 +75,19 @@ public class Login extends AppCompatActivity {
         String email = edt_auth.getText().toString().trim();
         String subject = "ASU OTP";
 
-        aNumber = (int)((Math.random() * 90000)+10000);
-        String message = "Your otp to login in ASU is " + aNumber;
+        aNumber = (int) ((Math.random() * 90000) + 10000);
+        String message = "Dear Student\n\n "
+                + aNumber +
+                " is your one time password to authenticate yourself as an ASU user." +
+                "\n In case this OTP request is not initiated by you," +
+                " than you can simply ignore this or report to the undersigned.\n\n"
+                + "Best Wishes"
+                + "\n\nAshish Bansal and Team"
+                + "\nashishbansal869@gmail.com\n"
+                + "ASU Android App\n"
+                +"Department of Computer Science and Engineering, "
+                +"School Of Engineering and Teechnology"
+                +"\nApeejay Stya University";
 
         //Creating SendMail object
         SendMail sm = new SendMail(this, email, subject, message, aNumber,this);
