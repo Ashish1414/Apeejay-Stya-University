@@ -30,7 +30,7 @@ public class PinEntry extends AppCompatActivity {
         btnPinSave = findViewById(R.id.btnSavePin);
         final SharedPreferences sharedPreferences = getSharedPreferences("LoginDetails", Context.MODE_PRIVATE);
         //For receving data
-        flag = sharedPreferences.getInt("flag", 0);                     //We are receving this flag value from UserSelect Activity
+        flag = sharedPreferences.getInt("flag", 0);
         Pin = sharedPreferences.getString("PIN","");
         if (flag == 0) {
             txtPin.setText("Create Your New Pin");
@@ -44,7 +44,7 @@ public class PinEntry extends AppCompatActivity {
                     else {
                         //Sending data to same activity PinEntry
                         SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putInt("flag", 1);
+                        editor.putInt("flag", 1);    // used for saving value
                         editor.putString("PIN", edtPin.getText().toString());
                         editor.commit();
 
