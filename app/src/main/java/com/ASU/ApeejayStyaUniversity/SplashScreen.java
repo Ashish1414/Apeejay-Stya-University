@@ -15,7 +15,7 @@ import android.view.WindowManager;
  * status bar and navigation/system bar) with user interaction.
  */
 public class SplashScreen extends AppCompatActivity {
-    public static int SPLASH_SCREEN_TIME=1500;
+    public static int SPLASH_SCREEN_TIME=1500;    // 15sec
     String versionUpdated,version_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

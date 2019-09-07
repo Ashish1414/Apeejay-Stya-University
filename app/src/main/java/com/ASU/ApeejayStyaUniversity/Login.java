@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity {
     TextView txt_who;
     EditText edt_auth;
     Button btnValidAuth;
-    int aNumber;
+    int aNumber;            // OTP
 
 
     @Override
@@ -72,11 +72,11 @@ public class Login extends AppCompatActivity {
 
     public void sendEmail() {
         //Getting content for email
-        String email = edt_auth.getText().toString().trim();
-        String subject = "ASU OTP";
+        String email = edt_auth.getText().toString().trim();    // getting the entered email and assigning it to email variable
+        String subject = "ASU OTP";                             //Subject for email
 
-        aNumber = (int) ((Math.random() * 90000) + 10000);     // for creating 5 digit otp
-        String message = "Dear Student\n\n "
+        aNumber = (int) ((Math.random() * 90000) + 10000);     // for creating 5 digit otp (random number)
+        String message = "Dear Student,\n\n "
                 + aNumber +
                 " is your one time password to authenticate yourself as an ASU user." +
                 "\n In case this OTP request is not initiated by you," +
@@ -89,11 +89,11 @@ public class Login extends AppCompatActivity {
                 +"School Of Engineering and Teechnology"
                 +"\nApeejay Stya University";
 
-        //Creating SendMail object
-        SendMail sm = new SendMail(this, email, subject, message, aNumber,this);                //aNumber - OTP
+        //Creating SendMail object sm
+        SendMail sm = new SendMail(this, email, subject, message, aNumber,this);                //(aNumber - OTP)  Passing values to constructor
 
         //Executing sendmail to send email
-        sm.execute();
+        sm.execute();                                   //execute method is used to start the background thread.
     }
     @Override
     public void onBackPressed() {

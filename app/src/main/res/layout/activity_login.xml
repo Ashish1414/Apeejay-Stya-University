@@ -37,6 +37,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <!--For Student -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_marginRight="70dp"
@@ -62,6 +63,9 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"/>
             </LinearLayout>
+            <!--ENd for Student -->
+
+            <!--For Faculty -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,10 +86,10 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"/>
             </LinearLayout>
-
-
+            <!--Ends for Faculty-->
         </RelativeLayout>
     </LinearLayout>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

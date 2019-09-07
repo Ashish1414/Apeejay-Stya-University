@@ -23,7 +23,7 @@ public class UserSelect extends AppCompatActivity {
         setContentView(R.layout.activity_user_select);
 
         sharedPreferences = getSharedPreferences("LoginDetails",0);
-        final int flag = sharedPreferences.getInt("flag",0);
+        final int flag = sharedPreferences.getInt("flag",0);                    //sending this flag value to PinEntry Activity
         txtAsuUser=findViewById(R.id.txtAsuUsers);
         txtOtherUser=findViewById(R.id.txtOtherUsers);
 
@@ -39,14 +39,14 @@ public class UserSelect extends AppCompatActivity {
         txtAsuUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (flag == 1)
+                if (flag == 1)                                  // means user already logged in, take him to PinEntry class
                 {
                     Intent intent = new Intent(UserSelect.this , PinEntry.class);
                     startActivityForResult(intent, 0);
                     overridePendingTransition(0, 0);
                     finish();
                 }
-                else {
+                else {                                                                      // else take the user to Login activity
                     Intent intent = new Intent(UserSelect.this, Login.class);
                     startActivityForResult(intent, 0);
                     overridePendingTransition(0, 0);
