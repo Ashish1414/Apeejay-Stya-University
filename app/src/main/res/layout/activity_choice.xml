@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/asufront"
     android:orientation="vertical"
     tools:context=".ActivityChoice">
     <!-- For ScrollView LinearLayout-->
@@ -18,20 +19,12 @@
             android:textSize="30sp"
             android:textAlignment="center"
             android:typeface="serif"
+            android:textColor="#190707"
+            android:textStyle="bold"
             android:text="Welcome To Apeejay Stya University">
 
         </TextView>
-
-        <Button
-            android:id="@+id/btnLogOut"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="134dp"
-            android:layout_marginRight="134dp"
-            android:text="Logout"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        
         <!--For 1st 3 Tabs-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,6 +39,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -57,14 +51,14 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:src="@drawable/f11" />
+                        android:src="@drawable/moodle_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Moodle"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -76,6 +70,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -87,14 +83,14 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:src="@drawable/f11" />
+                        android:src="@drawable/apricot_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Apricot"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -106,6 +102,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -124,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Library "
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -148,6 +146,8 @@
                 android:id="@+id/courses"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -167,7 +167,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Courses"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -178,6 +178,8 @@
                 android:id="@+id/map"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -197,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Map"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -208,6 +210,8 @@
                 android:id="@+id/directory"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -227,7 +231,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Directory"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -249,6 +253,8 @@
                 android:id="@+id/satyavani"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -261,14 +267,14 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:src="@drawable/f11" />
+                        android:src="@drawable/styavani_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Satyavani"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -280,6 +286,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -298,7 +306,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="News"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -310,6 +318,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -328,7 +338,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Calander"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -350,6 +360,8 @@
                 android:id="@+id/internals"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -369,7 +381,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Internals"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -380,6 +392,8 @@
                 android:id="@+id/teacher_review"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -399,7 +413,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Teacher Review"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -410,6 +424,8 @@
                 android:id="@+id/fee_details"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
 
@@ -429,7 +445,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Fee Details"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -450,6 +466,8 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/hostel"
                 android:layout_width="0dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
@@ -470,7 +488,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Hostel"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -482,6 +500,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -500,7 +520,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="Attendance"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -510,6 +530,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/abt_apeejay"
                 android:layout_width="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
@@ -523,14 +544,14 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:src="@drawable/f11" />
+                        android:src="@drawable/asuthumbnail" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:text="About Apeejay"
-                        android:textColor="@android:color/background_dark"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -538,6 +559,14 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
         <!--End For 5th three tabs-->
-
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>
