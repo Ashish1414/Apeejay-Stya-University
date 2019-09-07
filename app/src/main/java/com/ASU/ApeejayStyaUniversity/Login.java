@@ -75,7 +75,7 @@ public class Login extends AppCompatActivity {
         String email = edt_auth.getText().toString().trim();
         String subject = "ASU OTP";
 
-        aNumber = (int) ((Math.random() * 90000) + 10000);
+        aNumber = (int) ((Math.random() * 90000) + 10000);     // for creating 5 digit otp
         String message = "Dear Student\n\n "
                 + aNumber +
                 " is your one time password to authenticate yourself as an ASU user." +
@@ -90,7 +90,7 @@ public class Login extends AppCompatActivity {
                 +"\nApeejay Stya University";
 
         //Creating SendMail object
-        SendMail sm = new SendMail(this, email, subject, message, aNumber,this);
+        SendMail sm = new SendMail(this, email, subject, message, aNumber,this);                //aNumber - OTP
 
         //Executing sendmail to send email
         sm.execute();

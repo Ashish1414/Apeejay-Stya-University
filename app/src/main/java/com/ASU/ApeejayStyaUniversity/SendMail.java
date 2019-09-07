@@ -83,12 +83,12 @@ public class SendMail extends AsyncTask<Void, Void, Void> {
         props.put("mail.smtp.starttls.required", "true");
         props.put("mail.debug", "true");
         props.put("mail.smtp.ssl.enable", "true");
-        props.put("X-Priority","1");
+        props.put("X-Priority","1");   //1- very high 2-high , 3 -medium ,4-low , 5 - verylow
 
         //Creating a new session
         session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
-                    //Authenticating the password
+                    //Authenticating the password and id and logging in to email id
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(Config.EMAIL, Config.PASSWORD);
                     }

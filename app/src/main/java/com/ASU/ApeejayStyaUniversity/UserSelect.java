@@ -35,7 +35,7 @@ public class UserSelect extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+        //For session we have set flag = 1
         txtAsuUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
