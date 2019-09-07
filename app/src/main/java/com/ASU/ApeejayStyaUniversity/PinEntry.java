@@ -29,8 +29,8 @@ public class PinEntry extends AppCompatActivity {
         edtPin = findViewById(R.id.edtPin);
         btnPinSave = findViewById(R.id.btnSavePin);
         final SharedPreferences sharedPreferences = getSharedPreferences("LoginDetails", Context.MODE_PRIVATE);
-        //For receving data
-        flag = sharedPreferences.getInt("flag", 0);
+
+        flag = sharedPreferences.getInt("flag", 0);             // set the value of flag as 1
         Pin = sharedPreferences.getString("PIN","");
         if (flag == 0) {
             txtPin.setText("Create Your New Pin");
@@ -42,7 +42,7 @@ public class PinEntry extends AppCompatActivity {
                         Toast.makeText(PinEntry.this, "Enter 4 digit pin only", Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        //Sending data to same activity PinEntry
+
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putInt("flag", 1);    // used for saving value
                         editor.putString("PIN", edtPin.getText().toString());
