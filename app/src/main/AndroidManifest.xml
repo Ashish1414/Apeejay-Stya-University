@@ -9,11 +9,15 @@
         android:roundIcon="@drawable/asuthumbnail"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PinEntry"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".CourseShopping"></activity>
+        <activity android:name=".Apricot" />
+        <activity
+            android:name=".PinEntry"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActivityChoice" />
-        <activity android:name=".OtpVerification"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".OtpVerification"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -34,7 +38,7 @@
         </activity>
     </application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
