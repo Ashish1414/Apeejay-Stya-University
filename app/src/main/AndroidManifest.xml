@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".PinEntry"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ActivityChoice" />
+        <activity android:name=".ActivityChoice"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".OtpVerification"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
@@ -32,6 +33,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AboutASU"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".CourseShopping"></activity>
+        <activity android:name=".Apricot" />
     </application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
