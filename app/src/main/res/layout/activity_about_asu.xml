@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AboutASU">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About the University"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#F67B27"
+            android:textSize="30dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aboutimg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textColor="#190707"
+            android:layout_margin="15dp"
+            android:text="Apeejay Stya University (ASU) is a seat of global learning that offers rich opportunities for innovative teaching-learning, creativity and research across disciplines. It aims to bring about transformation of society through valuebased education, man-making and nation-building by blending the dual identities of a technology and research-based university with a Liberal Arts institution. ASU is recognised by the University Grants Commission (UGC).
+
+\n\nEstablished by the Apeejay Stya Education Foundation in the state of Haryana [under Act No. 10 of the Haryana Private Universities (Amendment) Act 2010], ASU provides students not only ‘education for living and livelihood’ but also ‘education for life’ and empowers learners with a fundamental foundation in leadership and professional skills to face the challenges of the new liberalised global economy.
+
+\n\nSituated amidst a sprawling, picturesque campus with state-of-the-art infrastructure on the Sohna-Palwal Road in the Gurugram district of Haryana, ASU offers a wide range of innovative graduate, postgraduate and doctoral programmes across a plethora of disciplines that are based on the best education practices of some of the leading universities of the world. These are greatly facilitated by the strong industry-academia linkages, already established by the existing Apeejay Stya institutions of higher learning in all disciplines being offered by the University."/>
+    </LinearLayout>
+
+</ScrollView>

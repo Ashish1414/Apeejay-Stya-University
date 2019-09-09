@@ -1,7 +1,6 @@
 package com.ASU.ApeejayStyaUniversity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,13 +12,10 @@ import android.widget.Button;
 public class ActivityChoice extends AppCompatActivity {
     Button btnLogOut;
     SharedPreferences sharedPreferences;
-    CardView cardView_apricot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
-
-        cardView_apricot=findViewById(R.id.apricot);
         sharedPreferences = getSharedPreferences("LoginDetails", Context.MODE_PRIVATE);
         btnLogOut = findViewById(R.id.btnLogOut);
         btnLogOut.setOnClickListener(new View.OnClickListener() {
@@ -31,13 +27,6 @@ public class ActivityChoice extends AppCompatActivity {
                 editor.commit();
                 onBackPressed();
 
-            }
-        });
-        cardView_apricot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Apricot.class);
-                startActivity(intent);
             }
         });
     }
