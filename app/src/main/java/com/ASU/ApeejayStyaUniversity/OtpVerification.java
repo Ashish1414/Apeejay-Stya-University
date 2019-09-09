@@ -21,9 +21,9 @@ public class OtpVerification extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_verification);
-        intent=getIntent();
-        bundle=intent.getExtras();
-        numOtp=bundle.getInt("OTP");
+        intent=getIntent();                                         //Call getIntent() method in target activity which is OtpVerification
+        bundle=intent.getExtras();                                 //Use intent.getExtras() to get the transferred data.
+        numOtp=bundle.getInt("OTP");                           //geting the intent from SendMail.class (not an activity)
 
         edtTextCode=findViewById(R.id.edtTextCode);
 
@@ -41,7 +41,7 @@ public class OtpVerification extends AppCompatActivity {
                 }
 
                 else {
-                    if(code.equals(""+numOtp))
+                    if(code.equals(""+numOtp))                  // If code is equal to the otp move to PinEntry Activity
                     {
 
                         Intent intent = new Intent(OtpVerification.this, PinEntry.class);
